@@ -15,7 +15,7 @@ router.get('/find/:id', getMovie);
 router.get('/all', verifyToken, getAllMovies);
 router.post('/create', verifyToken, createMovie);
 router.post('/update', verifyToken, updateMovie);
-router.post('/delete', verifyToken, deleteMovie);
+router.delete('/delete/:id', verifyToken, deleteMovie);
 router.get('/random', verifyToken, getRandomMovie);
 
 export default router;

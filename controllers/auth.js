@@ -48,7 +48,9 @@ const login = async (req, res) => {
     { expiresIn: '2d' },
   );
 
-  res.send({ msg: 'logged in', data: user._id, token: token });
+  const { password, ...info } = user._doc;
+
+  res.send({ ...info, token: token });
 };
 
 export { register, login };
