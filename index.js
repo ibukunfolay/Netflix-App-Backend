@@ -28,6 +28,9 @@ app.use('/api/auth', authRoute);
 app.use('/api/users', usersRoute);
 app.use('/api/lists', listsRoute);
 app.use('/api/movies', moviesRoute);
+app.get('/', (res) => {
+  res.send('welcome');
+});
 
 app.listen(Port, () => {
   console.log(`server live 😎✔✔ on port ${Port}`);
