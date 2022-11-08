@@ -10,7 +10,7 @@ import listsRoute from './Routes/lists';
 
 dotenv.config();
 const app = express();
-const Port = process.env.PORT || 5000;
+const Port = 5000;
 
 const params = {
   useNewUrlParser: true,
