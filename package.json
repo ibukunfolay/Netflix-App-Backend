@@ -14,6 +14,8 @@
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
+    "babel-node": "^0.0.1-security",
+    "babel-preset-env": "^1.7.0",
     "bcrypt": "^5.1.0",
     "crypto-js": "^4.1.1",
     "dotenv": "^16.0.3",
